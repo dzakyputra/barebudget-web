@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BareBudget: Simple Expense Tracker</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Define the color palette as CSS variables for easy use */
+        :root {
+            --background: #FDF6E3;
+            --surface: #EEE8D5;
+            --ink: #073642;
+            --accent: #B58900;
+            --income: #859900;
+            --expense: #DC322F;
+            --subtle: #586E75;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--ink);
+        }
+        /* Custom styling for the button */
+        .cta-button {
+            background-color: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 600; /* font-semibold */
+            border-radius: 0.5rem; /* rounded-lg */
+            transition: transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        /* Custom card styling for sections */
+        .card {
+            background-color: var(--surface);
+            border-radius: 1rem;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Main container -->
+    <div class="container mx-auto px-4 py-6 md:py-12 max-w-4xl text-center">
+        
+        <!-- Header Section -->
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4 tracking-tight" style="color: var(--ink);">
+            BareBudget
+        </h1>
+        <p class="text-md md:text-xl mb-3" style="color: var(--ink);">
+            Super simple, privacy-first expense tracker
+        </p>
+
+        <p class="text-xs md:text-sm mb-8" style="color: var(--subtle);">
+            Forget about complex features, just log your expenses. It's that simple.
+        </p>
+
+        <!-- App Mockup Image Placeholder -->
+        <!-- Replace the src URL with your actual app mockup image -->
+        <div class="">
+            <img 
+                src="image-min.png" 
+                alt="BareBudget app mockup" 
+                class="w-auto h-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto block"
+                style="object-fit: contain; width: 100%; max-width: 100vw; height: 60vh;"
+            >
+        </div>
+
+        <!-- Call to Action Button -->
+        <div class="mt-6 md:mt-8 flex justify-center">
+            <!-- Replace the href with your actual App Store link -->
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" class="inline-block shadow-lg transition-transform duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black rounded-lg">
+                <img src="button.svg" alt="Download on the App Store" class="h-10 md:h-12 w-auto" />
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
