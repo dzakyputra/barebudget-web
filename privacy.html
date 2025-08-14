@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BareBudget</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #FDF6E3;
+            --surface: #EEE8D5;
+            --ink: #073642;
+            --accent: #B58900;
+            --subtle: #586E75;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--background); color: var(--ink); }
+        .card { background-color: var(--surface); border-radius: 1rem; padding: 1.5rem; }
+        a { color: var(--accent); }
+    </style>
+    <meta name="description" content="Privacy Policy for BareBudget – a super simple, privacy-first expense tracker.">
+    <meta name="robots" content="noindex,follow">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="button.svg" type="image/svg+xml">
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 py-8 md:py-16 max-w-3xl">
+        <div class="mb-6">
+            <a href="index.html" class="text-sm inline-flex items-center gap-2 hover:underline" aria-label="Back to Home">
+                <span aria-hidden="true">←</span>
+                Back to Home
+            </a>
+        </div>
+
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2">Privacy Policy</h1>
+            <p class="text-sm md:text-base" style="color: var(--subtle);">Last updated: August 14, 2025</p>
+        </header>
+
+        <main class="space-y-6">
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Overview</h2>
+                <p>
+                    BareBudget is a super simple, privacy-first expense tracker. We designed it so that your data stays on your device and under your control.
+                    This Privacy Policy explains what information we (and the services we rely on) may handle when you use the BareBudget app and website.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Data We Do Not Collect</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>No account or sign-in required.</li>
+                    <li>No personal identifiers are collected by the app.</li>
+                    <li>No analytics SDKs in the app.</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Data Storage (App)</h2>
+                <p>
+                    Expense data you enter in BareBudget is stored locally on your device. Deleting the app or its local data will remove your entries. We do not receive or store this data on our servers.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Website and Logs</h2>
+                <p>
+                    The marketing website is a static site hosted on GitHub Pages. Like most web hosting providers, GitHub Pages may log basic request information (such as IP address and user-agent) to operate and secure the service.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Third-Party Services</h2>
+                <p class="mb-2">The website uses limited third-party resources to render fonts and styles:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Google Fonts (fonts.gstatic.com, fonts.googleapis.com)</li>
+                    <li>Tailwind CSS CDN (cdn.tailwindcss.com)</li>
+                </ul>
+                <p class="mt-2">These providers may receive your IP address and user-agent when your browser requests their assets. We do not have access to, nor control over, their logs. Please review their respective privacy policies for details.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Cookies and Tracking</h2>
+                <p>
+                    We do not set cookies or use third-party analytics on the website. No tracking pixels are used.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Children’s Privacy</h2>
+                <p>
+                    BareBudget is not intended for children under the age of 13. We do not knowingly collect personal information from children.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Changes to This Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated “Last updated” date.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="text-xl md:text-2xl font-bold mb-3" style="color: var(--accent);">Contact</h2>
+                <p>
+                    If you have questions about this Privacy Policy, please reach out via our repository’s issues page:
+                    <a href="https://github.com/dzakyputra/barebudget-web/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>.
+                </p>
+            </section>
+        </main>
+
+        <footer class="mt-10 text-center text-sm" style="color: var(--subtle);">
+            © <span id="year"></span> BareBudget
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
