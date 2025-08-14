@@ -54,10 +54,18 @@
     <!-- Main container -->
     <div class="container mx-auto px-4 py-6 md:py-12 max-w-4xl text-center">
         
-        <!-- Header Section -->
-        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4 tracking-tight" style="color: var(--ink);">
-            BareBudget
-        </h1>
+        <!-- Header Section with icon and title side by side -->
+        <div class="flex items-center justify-center mb-4 gap-3">
+            <img 
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADZElEQVR4nO2dTYhNYRyHnyFNGF8hNhbYyIYiZYXBClkoi9FIrERRFj4SVmJhrZikbKjxOVKys7EYIUWSEBITCRkfyau33sV0Y+69c99zzv895/fUs5um+3+fueecOefcc0EIIYQQQojYtAHzgC3AKeA28AR4D9wDzgOrw8+JjJgJdAPngHeAa8BeoD2rF1Q12oGVwHHgPvCnwQi1nix6kJSZD+wGbgDfRhig1t9h8yYaYCqwEegBXkUK8C8PNfJiqshoYBGwF7gF/MowwlBvFj24JeYC24HLwOecAtT6ggozHlgFHAMeFRSg1g9UiFE1m6GfBgLUOkjJmQVsAy6Evz6XgKVi7JDN0N0W/idwCjJy5gC7wmbou4EFdVUL4vcFa5o8NZGSyTAlvBOeG1g0V+Ug08I+YdDAYrkqB/En7Y4AXw0skqt6kMXhesF1YA+wNBzCjiv6hVWRtcC+cF1BGNhxTy/6RQiRDBOBreFC0Bvgh4GdrsvZL+Hk50VgMzC5qFMgRyt0qOua0B91Hg5nq3NhAfDUwODOuP7aycKsYywBPhoY1iWiv56/LqsYs4FPBoZ0CUbxf8hRGQPcMTCcS9S3wKSYQXYYGMol7omY56xeGxjIJa6/M2ZGjCAbDAzjSuLOGEHOGhjElcQo93U9NjCIK4nPYgQp6qY0V0L9qaWWKXoIVzIVBFsqCLZUEGypINhSQbClgmBLBcGWCoItFQRbKgi2VBBsqSDYUkGwpYJgSwXBlgpCHK8Ay8Itot7lwDUFoRD9wwz+xwEFIfd3Rj36FITc9JupeqxQEHKzo4E1mqAgmAriP7ikIOSjP5qqR6eCkJtXG1gj//FwBSE/9w+zPgeb/F0KQhz7wtFUR7CzyXeGgmBTBcGWCoItFQRbKgi2VBBsqSDYUkGwpYJgSwXBlgqCLRUEWyoItlQQbKkg2FJBsGXLpPgdH86ofi1bJpVvvnEJOBAjyEMDg7iS+CBGkDMGBnEl8XSMIOsNDOJKov8igyjPXHxpYBhXggcrR/vG6W4DA7nE7SIibeG7BoseyiXqpbCGUfE3h/UbGM4lZn+WD+b3v7jXwJAuobsd/Z3xmeLfepu0o6feDrwri83UcLSHJ//3hH8eBwwshCvIgbAGPWFNoh1NCSGEEEIIIQQZ8xdO7hSDUdhCcwAAAABJRU5ErkJggg==" 
+                alt="wallet" 
+                class="h-10 w-10 md:h-12 md:w-12"
+                style="filter: brightness(0) saturate(100%) invert(13%) sepia(25%) saturate(1812%) hue-rotate(148deg) brightness(97%) contrast(97%);"
+            >
+            <h1 class="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight" style="color: var(--ink); margin-bottom: 0;">
+                BareBudget
+            </h1>
+        </div>
         <p class="text-md md:text-xl mb-3" style="color: var(--ink);">
             Super simple, privacy-first expense tracker
         </p>
@@ -70,7 +78,7 @@
         <!-- Replace the src URL with your actual app mockup image -->
         <div class="">
             <img 
-                src="image-min.png" 
+                src="image-2-min.png" 
                 alt="BareBudget app mockup" 
                 class="w-auto h-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto block"
                 style="object-fit: contain; width: 100%; max-width: 100vw; height: 60vh;"
