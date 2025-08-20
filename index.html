@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BareBudget: Simple Expense Tracker</title>
+    <title>BareBudget – Super Simple, Privacy‑First Expense Tracker | Budget & Money Tracker</title>
+    <meta name="description" content="BareBudget is a super simple, privacy‑first expense tracker. A free budget tracker and money tracker that works without sign‑ups or bank connections.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://barebudget.app/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="BareBudget – Super Simple, Privacy‑First Expense Tracker">
+    <meta property="og:description" content="A free, privacy‑first budget & money tracker. No sign‑ups. No bank links. Just you and your numbers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barebudget.app/">
+    <meta property="og:image" content="https://barebudget.app/og-min.png">
+    <meta property="og:site_name" content="BareBudget">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BareBudget – Super Simple, Privacy‑First Expense Tracker">
+    <meta name="twitter:description" content="A free, privacy‑first budget & money tracker.">
+    <meta name="twitter:image" content="https://barebudget.app/og-twitter-min.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.svg">
     <!-- Load Tailwind CSS from CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Inter font from Google Fonts -->
@@ -48,6 +69,19 @@
             padding: 1.5rem;
         }
     </style>
+    
+    <!-- Minimal JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "BareBudget",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "url": "https://barebudget.app/",
+      "description": "Super simple, privacy‑first expense tracker, budget tracker, and money tracker."
+    }
+    </script>
 </head>
 <body class="antialiased">
 
@@ -79,16 +113,19 @@
         <div class="">
             <img 
                 src="image-2-min.png" 
-                alt="BareBudget app mockup" 
+                alt="BareBudget super simple, privacy-first expense tracker – budget & money tracker app interface"
                 class="w-auto h-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto block"
                 style="object-fit: contain; width: 100%; max-width: 100vw; height: 60vh;"
+                width="1200"
+                height="900"
+                decoding="async"
             >
         </div>
 
         <!-- Call to Action Button -->
         <div class="mt-6 md:mt-8 flex justify-center">
             <!-- Replace the href with your actual App Store link -->
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" class="inline-block shadow-lg transition-transform duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black rounded-lg">
+            <a href="https://apps.apple.com/id/app/barebudget-expense-tracker/id6749851832" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" class="inline-block shadow-lg transition-transform duration-200 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black rounded-lg">
                 <img src="button.svg" alt="Download on the App Store" class="h-10 md:h-12 w-auto" />
             </a>
         </div>
